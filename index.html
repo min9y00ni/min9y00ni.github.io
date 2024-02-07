@@ -46,21 +46,35 @@
         background-color: #04AA6D;
         color: white;
       }
+
+      @keyframes example {
+        from {background-color: red;}
+        to {background-color: yellow;}
+      }
+      
+      /* The element to apply the animation to */
+      .container {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 4s;
+      }
     </style>
   </head>
   
   <body>
-      <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="education.html">Education</a>
-        <a href="aboutMe.html">About Me</a>
-      </div>
-    <h1> Introduction </h1>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="education.html">Education</a>
+      <a href="aboutMe.html">About Me</a>
+    </div>
     
-    <p>This web page is about formal introduction about me.</p><br>
-    
-    <img src="img_girl.jpg" alt="Girl in a jacket" width="200" height="300">
+    <div class="container">
+      <h1> Introduction </h1>
+      <p>This web page is about formal introduction about me.</p><br>
+    </div>
   </body>
 
 </html>
