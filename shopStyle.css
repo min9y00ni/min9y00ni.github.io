@@ -4,40 +4,46 @@ body {
 }
 
 header {
-  background-color: #f4f4f4; /* Set your desired background color */
-  padding: 10px;
-  overflow: hidden;
+        background-color: #f4f4f4; /* Set your desired background color */
+        padding: 10px;
+        overflow: hidden;
 }
 
 .topnav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
 }
 
 .logo img {
-  max-height: 50px; /* Adjust the maximum height of your logo */
+        max-height: 100px; /* Adjust the maximum height of your logo */
 }
 
 .menu a {
-  float: right;
-  display: block;
-  color: #333; /* Set your desired text color */
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+        float: right;
+        display: block;
+        color: #333; /* Set your desired text color */
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
 }
 
 .menu a:hover {
-  background-color: #ddd; /* Set your desired hover background color */
-  color: #333; /* Set your desired hover text color */
+        background-color: #ddd; /* Set your desired hover background color */
+        color: #333; /* Set your desired hover text color */
+}
+
+.menu a.active {
+        background-color: #F4BF96;
+        color: #1F1717;
 }
 
 @media screen and (max-width: 600px) {
   .menu a {
-    float: none;
-    display: block;
-    text-align: left;
+        float: none;
+        display: block;
+        text-align: left;
   }
 }
 
@@ -86,33 +92,33 @@ header {
 
 /* Style the main heading */
 .container h1 {
-  font-size: 2em;
-  color: #333;
-  text-align: left;
+        font-size: 2em;
+        color: #333;
+        text-align: left;
 }
 
 /* Style the main paragraph */
 .container p {
-  font-size: 1.2em;
-  color: #666;
-  text-align: left;
-  margin-bottom: 10px;
+        font-size: 1.2em;
+        color: #666;
+        text-align: left;
+        margin-bottom: 10px;
 }
 
 /* Style the skincare tips list */
 .skincare-tips {
-  text-align: left;
-  margin-bottom: 20px;
+        text-align: left;
+        margin-bottom: 20px;
 }
 
 .skincare-tips li {
-  list-style-type: none;
-  margin-bottom: 8px;
+        list-style-type: none;
+        margin-bottom: 8px;
 }
 
 /* Style the warning paragraph */
 .warning {
-  font-weight: bold;
-  color: #FF0000; /* Red color for emphasis */
-  text-align: left;
+        font-weight: bold;
+        color: #FF0000; /* Red color for emphasis */
+        text-align: left;
 }
