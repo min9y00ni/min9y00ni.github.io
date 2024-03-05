@@ -40,3 +40,44 @@ body {
 .container {
         text-align: center;
 }
+
+/* Apply styles to the container */
+.container {
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Style the main heading */
+.container h1 {
+  font-size: 2em;
+  color: #333;
+  text-align: left;
+}
+
+/* Style the main paragraph */
+.container p {
+  font-size: 1.2em;
+  color: #666;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Style the skincare tips list */
+.skincare-tips {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.skincare-tips li {
+  list-style-type: none;
+  margin-bottom: 8px;
+}
+
+/* Style the warning paragraph */
+.warning {
+  font-weight: bold;
+  color: #FF0000; /* Red color for emphasis */
+  text-align: left;
+}
