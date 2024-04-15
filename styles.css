@@ -1,9 +1,24 @@
 body {
     font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #f4f4f4; /* Light gray */
+}
+
+.project-container {
+    display: inline-block;
+    margin: 20px;
+}
+
+.project img {
+    width: 250px; /* Adjust the width as needed */
+    height: auto;
 }
 
 header {
@@ -48,14 +63,87 @@ section {
     margin: 20px;
 }
 
-.project-container {
+/* Add this CSS to your styles.css file */
+
+.profile {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
 }
 
-.project {
-    margin: 0 20px;
-    text-align: center;
+.profile-info {
+    margin-bottom: 30px;
 }
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile h2 {
+    margin-bottom: 10px;
+}
+
+.education, .work-experience {
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tr {
+        margin-bottom: 10px;
+        display: block;
+        border: 1px solid #ccc;
+    }
+
+    table td {
+        display: block;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    table td:before {
+        position: absolute;
+        left: 6px;
+        content: attr(data-label);
+    }
+}
+
 
 
 footer {
