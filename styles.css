@@ -7,16 +7,22 @@ body {
 }
 
 .project-container {
-    display: inline-block;
-    margin: 20px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    text-align: center;
+}
+
+.project {
+    width: 300px; /* Adjust the width as needed */
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
 }
 
 .project img {
-    width: 250px; /* Adjust the width as needed */
+    max-width: 100%;
     height: auto;
 }
 
